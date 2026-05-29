@@ -1,6 +1,4 @@
 import os
-import time
-import schedule
 from twilio.rest import Client
 from dotenv import load_dotenv ##importante para carregar as variáveis da env
 
@@ -23,11 +21,5 @@ def enviar_mensagem():
     except Exception as e:
         print(f"Erro ao enviar lembrete: {e}")
 
-schedule.every().day.at("19:00").do(enviar_mensagem)
-
 
 print("Bot de lembrete iniciado. Aguardando para enviar mensagens...")
-
-while True:
-    schedule.run_pending()
-    time.sleep(1)
