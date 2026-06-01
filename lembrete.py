@@ -20,3 +20,6 @@ def enviar_mensagem():
         print(f"lembrete enviado com sucesso! SID: {message.sid}")
     except Exception as e:
         print(f"Erro ao enviar lembrete: {e}")
+
+if __name__ == "__main__":
+    enviar_mensagem()

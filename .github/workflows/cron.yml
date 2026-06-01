@@ -2,8 +2,8 @@ name: Disparar lembrete diário
 
 on:
   schedule:
-    - cron: '0 22 * * *' # Executa todos os dias às 19:00 PM
-
+    - cron: '0 19 * * *' # Executa todos os dias às 19:00 PM 
+  workflow_dispatch:
 jobs:
   enviar-mensagem:
     runs-on: ubuntu-latest
