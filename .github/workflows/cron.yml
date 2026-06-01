@@ -18,7 +18,7 @@ jobs:
 
     - name: Instalar dependências
       run: |
-        pip install twilio
+        pip install -r requirements.txt
 
     - name: Executar o script de envio
       env:
