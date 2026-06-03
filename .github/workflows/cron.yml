@@ -2,7 +2,7 @@ name: Disparar lembrete diário
 
 on:
   schedule:
-    - cron: '0 21 * * *' # Executa todos os dias às 19:00 PM 
+    - cron: '0 20 * * *' # Executa todos os dias às 19:00 PM 
   workflow_dispatch:
 jobs:
   enviar-mensagem:
